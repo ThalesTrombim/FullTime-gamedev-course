@@ -137,7 +137,29 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 2172}
     spritePosition: {x: 1691, y: 851}
-  - name: Plano de Fundo
+  - name: Coin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 215
+      width: 51
+      height: 51
+    spriteID: acab9ecf690c54f56a908025048d7f50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3852, y: 215}
+    spritePosition: {x: 2018, y: 1436}
+  - name: Background (Reference)
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -148,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 3840
       height: 2160
-    spriteID: 2bb55c3a12f9b4966b1a2d0ff3649d90
+    spriteID: c18a0b9c306e94a57ac9f1a1b5f4b882
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -209,12 +231,22 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Plano de Fundo
-    spriteName: Plano de Fundo
+  - name: Coin
+    spriteName: Coin
     isGroup: 0
     parentIndex: -1
-    spriteID: 2bb55c3a12f9b4966b1a2d0ff3649d90
-    layerID: 1
+    spriteID: acab9ecf690c54f56a908025048d7f50
+    layerID: 5
+    mosaicPosition: {x: 3852, y: 215}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Background (Reference)
+    spriteName: Background (Reference)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c18a0b9c306e94a57ac9f1a1b5f4b882
+    layerID: 4
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
