@@ -9,15 +9,18 @@ public class Collectable : MonoBehaviour
   //[SerializeField] private bool isAmmo;
 
   enum ItemType { Coin, Health, Ammo };
-
   [SerializeField] private ItemType itemType;
+
+  NewPlayer newPlayer;
 
   void Start()
   {
     if (itemType == ItemType.Coin)
     {
       Debug.Log("I'm coin");
-    }    
+    }
+
+    newPlayer = GameObject.Find("Player").GetComponent<NewPlayer>();
   }
 
   // Update is called once per frame
@@ -32,9 +35,9 @@ public class Collectable : MonoBehaviour
     {
       // Somente desativa o gameobject associado a este script.
       //gameObject.SetActive(false);
-
-
-      GameObject.Find("Player").GetComponent<NewPlayer>().coinsCollected += 1;
+      
+      newPlayer.coinsCollected += 1;
+      newPlayer.UpdateUI();
 
       // Destroi totalmente o gameObject associado a este script.
       Destroy(gameObject);

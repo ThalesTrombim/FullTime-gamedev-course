@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewPlayer : PhysicsObject
 {
@@ -9,14 +10,16 @@ public class NewPlayer : PhysicsObject
   [SerializeField] private float jumpPower = 10;
 
   public int coinsCollected;
+  public int health = 100;
+  public int ammo;
 
-  // Start is called before the first frame update
+  public Text coinsText;
+
   void Start()
   {
-        
+    coinsText = GameObject.Find("Coins").GetComponent<Text>();
   }
 
-  // Update is called once per frame
   void Update()
   {
     targetVelocity = new Vector2(Input.GetAxis("Horizontal")*maxSpeed, 0);
@@ -25,5 +28,12 @@ public class NewPlayer : PhysicsObject
     {
       velocity.y = jumpPower;
     }
+  }
+
+  public void UpdateUI()
+  {
+    // Essa abordagem, faz com que o dev sempre tenha que lembrar de colocar a
+    // referencia no Unity Editor
+    coinsText.text = coinsCollected.ToString();
   }
 }
