@@ -36,10 +36,28 @@ public class Collectable : MonoBehaviour
       // Somente desativa o gameobject associado a este script.
       //gameObject.SetActive(false);
       
-      newPlayer.coinsCollected += 1;
-      newPlayer.UpdateUI();
 
-      // Destroi totalmente o gameObject associado a este script.
+      if(itemType == ItemType.Coin)
+      {
+        newPlayer.coinsCollected += 1;
+      }
+      else if(itemType == ItemType.Health)
+      {
+        if (newPlayer.health < 100)
+        {
+          newPlayer.health += 1;
+        }
+      }
+      else if(itemType == ItemType.Ammo)
+      {
+
+      }
+      else
+      {
+
+      }
+
+      newPlayer.UpdateUI();
       Destroy(gameObject);
     }
   }
