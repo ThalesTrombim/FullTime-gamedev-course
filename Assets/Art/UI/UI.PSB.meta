@@ -93,6 +93,50 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: Inventory Key
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 99
+      width: 86
+      height: 93
+    spriteID: fa7935e777a734dc5b8956dd5833aa94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3852, y: 99}
+    spritePosition: {x: 3580, y: 2019}
+  - name: Inventory Blank 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 4
+      width: 87
+      height: 87
+    spriteID: 2fc0e133c40834e8eafafabfcd0d0f80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3852, y: 4}
+    spritePosition: {x: 3692, y: 2018}
   - name: Health Bar
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -113,7 +157,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3, y: 2171}
+    uvTransform: {x: 3, y: 2170}
     spritePosition: {x: 98, y: 2043}
   - name: Background (Reference)
     originalName: 
@@ -233,6 +277,26 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: Inventory Key
+    spriteName: Inventory Key
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fa7935e777a734dc5b8956dd5833aa94
+    layerID: 9
+    mosaicPosition: {x: 3852, y: 99}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Inventory Blank 2
+    spriteName: Inventory Blank 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2fc0e133c40834e8eafafabfcd0d0f80
+    layerID: 16
+    mosaicPosition: {x: 3852, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Health Bar
     spriteName: Health Bar
     isGroup: 0
