@@ -14,6 +14,13 @@ public class NewPlayer : PhysicsObject
   public int health = 100;
   public int ammo;
 
+  public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
+  public Image inventoryImage;
+  public Sprite keySprite;
+  public Sprite keyGemSprite;
+
+  public Sprite inventoryItemBlank;
+
   public Text coinsText;
   public Image healthBar;
 
@@ -43,5 +50,19 @@ public class NewPlayer : PhysicsObject
     coinsText.text = coinsCollected.ToString();
 
     healthBar.rectTransform.sizeDelta = new Vector2(healthBarOrigSize.x * ((float)health/(float)maxHealth), healthBar.rectTransform.sizeDelta.y);
+  }
+  
+  public void AddInventoryItem(string inventoryName, Sprite image)
+  {
+    inventory.Add(inventoryName, image);
+
+    inventoryImage.sprite = inventory[inventoryName];
+  }
+
+  public void RemoveInventoryItem(string inventoryName)
+  {
+    inventory.Remove(inventoryName);
+
+    inventoryImage.sprite = inventoryItemBlank;
   }
 }

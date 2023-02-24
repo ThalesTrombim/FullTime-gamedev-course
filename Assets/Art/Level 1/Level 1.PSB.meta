@@ -137,6 +137,28 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 2172}
     spritePosition: {x: 1691, y: 851}
+  - name: Key
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3853
+      y: 215
+      width: 59
+      height: 62
+    spriteID: 51f22836303c440f896bdad6b62471b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3852, y: 215}
+    spritePosition: {x: 2137, y: 1430}
   - name: Coin
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -145,7 +167,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 215
+      y: 285
       width: 51
       height: 51
     spriteID: acab9ecf690c54f56a908025048d7f50
@@ -157,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3852, y: 215}
+    uvTransform: {x: 3852, y: 285}
     spritePosition: {x: 2018, y: 1436}
   - name: Background (Reference)
     originalName: 
@@ -231,13 +253,23 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Key
+    spriteName: Key
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 51f22836303c440f896bdad6b62471b2
+    layerID: 6
+    mosaicPosition: {x: 3852, y: 215}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Coin
     spriteName: Coin
     isGroup: 0
     parentIndex: -1
     spriteID: acab9ecf690c54f56a908025048d7f50
     layerID: 5
-    mosaicPosition: {x: 3852, y: 215}
+    mosaicPosition: {x: 3852, y: 285}
     flatten: 0
     isImported: 1
     isVisible: 1

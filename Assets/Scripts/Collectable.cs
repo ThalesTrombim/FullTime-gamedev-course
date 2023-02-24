@@ -8,8 +8,11 @@ public class Collectable : MonoBehaviour
   //[SerializeField] private bool isHealth;
   //[SerializeField] private bool isAmmo;
 
-  enum ItemType { Coin, Health, Ammo };
+  enum ItemType { Coin, Health, Ammo, InventoryItem };
   [SerializeField] private ItemType itemType;
+
+  [SerializeField] private string inventoryStringName;
+  [SerializeField] private Sprite inventorySprite;
 
   NewPlayer newPlayer;
 
@@ -35,22 +38,26 @@ public class Collectable : MonoBehaviour
     {
       // Somente desativa o gameobject associado a este script.
       //gameObject.SetActive(false);
-      
 
-      if(itemType == ItemType.Coin)
+
+      if (itemType == ItemType.Coin)
       {
         newPlayer.coinsCollected += 1;
       }
-      else if(itemType == ItemType.Health)
+      else if (itemType == ItemType.Health)
       {
         if (newPlayer.health < 100)
         {
           newPlayer.health += 1;
         }
       }
-      else if(itemType == ItemType.Ammo)
+      else if (itemType == ItemType.Ammo)
       {
 
+      }
+      else if (itemType == ItemType.InventoryItem)
+      {
+        newPlayer.AddInventoryItem(inventoryStringName, inventorySprite);
       }
       else
       {
