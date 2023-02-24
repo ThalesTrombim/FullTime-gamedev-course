@@ -26,6 +26,18 @@ public class NewPlayer : PhysicsObject
 
   private Vector2 healthBarOrigSize;
 
+  //Singleton instantation
+
+  private static NewPlayer instance;
+  public static NewPlayer Instance
+  {
+    get
+    {
+      if (instance == null) instance = GameObject.FindObjectOfType<NewPlayer>();
+      return instance;
+    }
+  }
+
   void Start()
   {
     coinsText = GameObject.Find("Coins").GetComponent<Text>();

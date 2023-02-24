@@ -14,19 +14,11 @@ public class Collectable : MonoBehaviour
   [SerializeField] private string inventoryStringName;
   [SerializeField] private Sprite inventorySprite;
 
-  NewPlayer newPlayer;
-
   void Start()
   {
-    if (itemType == ItemType.Coin)
-    {
-      Debug.Log("I'm coin");
-    }
 
-    newPlayer = GameObject.Find("Player").GetComponent<NewPlayer>();
   }
 
-  // Update is called once per frame
   void Update()
   {
         
@@ -34,21 +26,18 @@ public class Collectable : MonoBehaviour
 
   private void OnTriggerEnter2D(Collider2D collision)
   {
-    if(collision.gameObject.name == "Player")
+    if(collision.gameObject == NewPlayer.Instance.gameObject)
     {
-      // Somente desativa o gameobject associado a este script.
-      //gameObject.SetActive(false);
-
 
       if (itemType == ItemType.Coin)
       {
-        newPlayer.coinsCollected += 1;
+        NewPlayer.Instance.coinsCollected += 1;
       }
       else if (itemType == ItemType.Health)
       {
-        if (newPlayer.health < 100)
+        if (NewPlayer.Instance.health < 100)
         {
-          newPlayer.health += 1;
+          NewPlayer.Instance.health += 1;
         }
       }
       else if (itemType == ItemType.Ammo)
@@ -57,14 +46,14 @@ public class Collectable : MonoBehaviour
       }
       else if (itemType == ItemType.InventoryItem)
       {
-        newPlayer.AddInventoryItem(inventoryStringName, inventorySprite);
+        NewPlayer.Instance.AddInventoryItem(inventoryStringName, inventorySprite);
       }
       else
       {
 
       }
 
-      newPlayer.UpdateUI();
+      NewPlayer.Instance.UpdateUI();
       Destroy(gameObject);
     }
   }

@@ -6,8 +6,6 @@ public class Gate : MonoBehaviour
 {
   [SerializeField] private string requiredInventoryItemString;
 
-  NewPlayer newPlayer;
-
   void Start()
   {
         
@@ -16,16 +14,16 @@ public class Gate : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    newPlayer = GameObject.Find("Player").GetComponent<NewPlayer>();
+
   }
 
   private void OnTriggerEnter2D(Collider2D collision)
   {
-    if(collision.gameObject.name == "Player")
+    if(collision.gameObject == NewPlayer.Instance.gameObject)
     {
-      if (newPlayer.inventory.ContainsKey(requiredInventoryItemString))
+      if (NewPlayer.Instance.inventory.ContainsKey(requiredInventoryItemString))
       {
-        newPlayer.RemoveInventoryItem(requiredInventoryItemString);
+        NewPlayer.Instance.RemoveInventoryItem(requiredInventoryItemString);
         Destroy(gameObject);
       }
     }
