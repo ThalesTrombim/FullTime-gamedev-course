@@ -137,6 +137,28 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 2172}
     spritePosition: {x: 1691, y: 851}
+  - name: White pixel
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 344
+      width: 38
+      height: 38
+    spriteID: 09a7f76ac08ea471995b2b84818440cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3850, y: 343}
+    spritePosition: {x: 2303, y: 1475}
   - name: Enemy
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -272,6 +294,16 @@ ScriptedImporter:
     spriteID: 5eb42d711542a447c901f2e3e18f3858
     layerID: 2
     mosaicPosition: {x: 4, y: 2172}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: White pixel
+    spriteName: White pixel
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09a7f76ac08ea471995b2b84818440cf
+    layerID: 11
+    mosaicPosition: {x: 3852, y: 344}
     flatten: 0
     isImported: 1
     isVisible: 1

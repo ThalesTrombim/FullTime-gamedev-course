@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NewPlayer : PhysicsObject
@@ -8,6 +9,11 @@ public class NewPlayer : PhysicsObject
 
   [SerializeField] private float maxSpeed = 1;
   [SerializeField] private float jumpPower = 10;
+
+  [SerializeField] private GameObject attackBox;
+  [SerializeField] private float attackDuration;
+
+  public int attackPower = 25;
 
   public int coinsCollected;
   private int maxHealth = 100;
@@ -55,6 +61,25 @@ public class NewPlayer : PhysicsObject
     {
       velocity.y = jumpPower;
     }
+
+    if(targetVelocity.x < -.01)
+    {
+      transform.localScale = new Vector2(-1, 1);
+    }
+    else if(targetVelocity.x > 0.1)
+    {
+      transform.localScale = new Vector2(1, 1);
+    }
+
+    if(Input.GetButtonDown("Fire1"))
+    {
+      StartCoroutine("ActivateAttack");
+    }
+
+    if(health <= 0)
+    {
+      Die();
+    }
   }
 
   public void UpdateUI()
@@ -76,5 +101,17 @@ public class NewPlayer : PhysicsObject
     inventory.Remove(inventoryName);
 
     inventoryImage.sprite = inventoryItemBlank;
+  }
+
+  public IEnumerator ActivateAttack()
+  {
+    attackBox.SetActive(true);
+    yield return new WaitForSeconds(attackDuration);
+    attackBox.SetActive(false);
+  }
+
+  public void Die()
+  {
+    SceneManager.LoadScene("SampleScene");
   }
 }

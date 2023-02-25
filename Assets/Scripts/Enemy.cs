@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : PhysicsObject
 {
@@ -19,6 +20,8 @@ public class Enemy : PhysicsObject
   [SerializeField] private float raycastLength = 1;
 
   [SerializeField] private int attackPower = 10;
+  public int health = 100;
+  private int maxHealth = 100;
 
   void Start()
   {
@@ -45,6 +48,8 @@ public class Enemy : PhysicsObject
     leftWallRaycastHit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.left, raycastLength, rayCastLayerMask);
     Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), Vector2.left * raycastLength, Color.blue);
     if (leftWallRaycastHit.collider != null) direction = 1;
+
+    if (health <= 0) Destroy(gameObject);
   }
 
   private void OnCollisionEnter2D(Collision2D collision)
@@ -55,4 +60,5 @@ public class Enemy : PhysicsObject
       NewPlayer.Instance.UpdateUI();
     }
   }
+
 }
