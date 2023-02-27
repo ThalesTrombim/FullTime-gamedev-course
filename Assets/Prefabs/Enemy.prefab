@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1222528131442083089}
   - component: {fileID: 490363462473306878}
   - component: {fileID: 4397328831718573690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minGroundNormalY: 0.65
   gravityModifier: 1
-  maxSpeed: 0.4
+  maxSpeed: 1
+  rayCastLayerMask:
+    serializedVersion: 2
+    m_Bits: 51
   rayCastOffset: {x: 1, y: 0}
-  raycastLength: 2
+  raycastLength: 1
+  attackPower: 10
+  health: 100
