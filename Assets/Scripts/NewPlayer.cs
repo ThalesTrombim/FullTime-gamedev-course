@@ -44,13 +44,23 @@ public class NewPlayer : PhysicsObject
     }
   }
 
+  private void Awake()
+  {
+    if (GameObject.Find("New Player")) Destroy(gameObject);
+  }
+
   void Start()
   {
+    DontDestroyOnLoad(gameObject);
+
+    gameObject.name = "New Player";
+
     coinsText = GameObject.Find("Coins").GetComponent<Text>();
     healthBar = GameObject.Find("Health Bar").GetComponent<Image>();
     healthBarOrigSize = healthBar.rectTransform.sizeDelta;
-
     UpdateUI();
+
+    SetSpawnPosition();
   }
 
   void Update()
@@ -113,5 +123,10 @@ public class NewPlayer : PhysicsObject
   public void Die()
   {
     SceneManager.LoadScene("SampleScene");
+  }
+
+  public void SetSpawnPosition()
+  {
+    transform.position = GameObject.Find("Spawn Location").transform.position;
   }
 }
