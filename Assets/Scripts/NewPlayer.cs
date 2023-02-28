@@ -21,19 +21,14 @@ public class NewPlayer : PhysicsObject
   public int ammo;
 
   public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
-  public Image inventoryImage;
   public Sprite keySprite;
   public Sprite keyGemSprite;
 
   public Sprite inventoryItemBlank;
 
-  public Text coinsText;
-  public Image healthBar;
-
   private Vector2 healthBarOrigSize;
 
   //Singleton instantation
-
   private static NewPlayer instance;
   public static NewPlayer Instance
   {
@@ -55,9 +50,9 @@ public class NewPlayer : PhysicsObject
 
     gameObject.name = "New Player";
 
-    coinsText = GameObject.Find("Coins").GetComponent<Text>();
-    healthBar = GameObject.Find("Health Bar").GetComponent<Image>();
-    healthBarOrigSize = healthBar.rectTransform.sizeDelta;
+    GameManager.Instance.coinsText = GameObject.Find("Coins").GetComponent<Text>();
+    GameManager.Instance.healthBar = GameObject.Find("Health Bar").GetComponent<Image>();
+    healthBarOrigSize = GameManager.Instance.healthBar.rectTransform.sizeDelta;
     UpdateUI();
 
     SetSpawnPosition();
@@ -94,23 +89,23 @@ public class NewPlayer : PhysicsObject
 
   public void UpdateUI()
   {
-    coinsText.text = coinsCollected.ToString();
+    GameManager.Instance.coinsText.text = coinsCollected.ToString();
 
-    healthBar.rectTransform.sizeDelta = new Vector2(healthBarOrigSize.x * ((float)health/(float)maxHealth), healthBar.rectTransform.sizeDelta.y);
+    GameManager.Instance.healthBar.rectTransform.sizeDelta = new Vector2(healthBarOrigSize.x * ((float)health/(float)maxHealth), GameManager.Instance.healthBar.rectTransform.sizeDelta.y);
   }
   
   public void AddInventoryItem(string inventoryName, Sprite image)
   {
     inventory.Add(inventoryName, image);
 
-    inventoryImage.sprite = inventory[inventoryName];
+    GameManager.Instance.inventoryImage.sprite = inventory[inventoryName];
   }
 
   public void RemoveInventoryItem(string inventoryName)
   {
     inventory.Remove(inventoryName);
 
-    inventoryImage.sprite = inventoryItemBlank;
+    GameManager.Instance.inventoryImage.sprite = inventoryItemBlank;
   }
 
   public IEnumerator ActivateAttack()
