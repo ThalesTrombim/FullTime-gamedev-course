@@ -23,12 +23,6 @@ public class Enemy : PhysicsObject
   public int health = 100;
   private int maxHealth = 100;
 
-  void Start()
-  {
-         
-  }
-
-  // Update is called once per frame
   void Update()
   {
     targetVelocity = new Vector2(maxSpeed*direction, 0);

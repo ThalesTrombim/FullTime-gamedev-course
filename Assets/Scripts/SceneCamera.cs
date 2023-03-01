@@ -10,10 +10,4 @@ public class SceneCamera : MonoBehaviour
   {
     cinemachineVirtualCamera.Follow = NewPlayer.Instance.transform;    
   }
-
-  // Update is called once per frame
-  void Update()
-  {
-        
-  }
 }

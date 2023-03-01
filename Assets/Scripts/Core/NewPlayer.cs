@@ -6,27 +6,25 @@ using UnityEngine.UI;
 
 public class NewPlayer : PhysicsObject
 {
-
-  [SerializeField] private float maxSpeed = 1;
-  [SerializeField] private float jumpPower = 10;
-
-  [SerializeField] private GameObject attackBox;
+  [Header("Attributes")]
   [SerializeField] private float attackDuration;
-
   public int attackPower = 25;
+  [SerializeField] private float jumpPower = 10;
+  [SerializeField] private float maxSpeed = 1;
 
-  public int coinsCollected;
-  private int maxHealth = 100;
-  public int health = 100;
+  [Header("Inventory")]
   public int ammo;
+  public int coinsCollected;
+  public int health = 100;
+  private int maxHealth = 100;
 
+  [Header("References")]
+  [SerializeField] private GameObject attackBox;
   public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
+  public Sprite inventoryItemBlank;
+  private Vector2 healthBarOrigSize;
   public Sprite keySprite;
   public Sprite keyGemSprite;
-
-  public Sprite inventoryItemBlank;
-
-  private Vector2 healthBarOrigSize;
 
   //Singleton instantation
   private static NewPlayer instance;

@@ -6,17 +6,6 @@ public class Gate : MonoBehaviour
 {
   [SerializeField] private string requiredInventoryItemString;
 
-  void Start()
-  {
-        
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
   private void OnTriggerEnter2D(Collider2D collision)
   {
     if(collision.gameObject == NewPlayer.Instance.gameObject)

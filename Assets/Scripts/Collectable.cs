@@ -4,25 +4,11 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-  //[SerializeField] private bool isCoin;
-  //[SerializeField] private bool isHealth;
-  //[SerializeField] private bool isAmmo;
-
   enum ItemType { Coin, Health, Ammo, InventoryItem };
   [SerializeField] private ItemType itemType;
 
   [SerializeField] private string inventoryStringName;
   [SerializeField] private Sprite inventorySprite;
-
-  void Start()
-  {
-
-  }
-
-  void Update()
-  {
-        
-  }
 
   private void OnTriggerEnter2D(Collider2D collision)
   {
