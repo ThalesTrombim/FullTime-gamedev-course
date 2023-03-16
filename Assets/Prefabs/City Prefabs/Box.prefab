@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677766770889684726}
   - component: {fileID: 4688643696328450178}
-  - component: {fileID: 4489492758344307075}
+  - component: {fileID: -3667877993479596271}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -85,16 +85,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &4489492758344307075
-BoxCollider:
+--- !u!60 &-3667877993479596271
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5603349504660456765}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.36, y: 1.36, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.36, y: 1.36}
+    newSize: {x: 1.36, y: 1.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.68, y: 0.68}
+      - {x: -0.68, y: -0.68}
+      - {x: 0.68, y: -0.68}
+      - {x: 0.68, y: 0.68}
