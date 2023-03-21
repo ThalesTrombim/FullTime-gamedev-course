@@ -109,7 +109,7 @@ ScriptedImporter:
     - name: EyeL
       guid: f42fa8792c5e1474ebb56560e87d2e31
       position: {x: -0.0501709, y: 21.53418, z: 0}
-      rotation: {x: 0, y: 0, z: -0.014280586, w: 0.9998981}
+      rotation: {x: 0, y: 0, z: -0.014280558, w: 0.9998981}
       length: 49.4857
       parentId: -1
       color:
@@ -436,8 +436,8 @@ ScriptedImporter:
     - name: EyeR
       guid: 70d7a07fa19c74564a4deb6aad85d940
       position: {x: -1.1060791, y: 19.414185, z: 0}
-      rotation: {x: 0, y: 0, z: 0.0000010728834, w: 1}
-      length: 50.878784
+      rotation: {x: 0, y: 0, z: 0.0000011622906, w: 1}
+      length: 50.878777
       parentId: -1
       color:
         serializedVersion: 2
@@ -762,8 +762,8 @@ ScriptedImporter:
     spriteBone:
     - name: ArmR
       guid: 165c531599e5d4098a77f64cc38ef0ae
-      position: {x: -209.0935, y: 37.951538, z: 0}
-      rotation: {x: 0, y: 0, z: 0.00000029802317, w: 1}
+      position: {x: -209.0935, y: 37.95166, z: 0}
+      rotation: {x: 0, y: 0, z: 0.00000035762787, w: 1}
       length: 255.03711
       parentId: -1
       color:
@@ -1089,8 +1089,8 @@ ScriptedImporter:
     spriteBone:
     - name: ArmR
       guid: 165c531599e5d4098a77f64cc38ef0ae
-      position: {x: 203.67126, y: 0.00005340576, z: 0}
-      rotation: {x: 0, y: 0, z: 0.004505485, w: 0.99998987}
+      position: {x: 203.67126, y: 0.00012207031, z: 0}
+      rotation: {x: 0, y: 0, z: 0.004505396, w: 0.99998987}
       length: 255.03711
       parentId: 1
       color:
@@ -1099,7 +1099,7 @@ ScriptedImporter:
     - name: BicepR
       guid: 6980c5eb370a84e0aa33433361b5ffcb
       position: {x: -187.75647, y: 24.786621, z: 0}
-      rotation: {x: 0, y: 0, z: -0.004505187, w: 0.99998987}
+      rotation: {x: 0, y: 0, z: -0.0045050383, w: 0.99998987}
       length: 203.67126
       parentId: -1
       color:
@@ -1526,8 +1526,8 @@ ScriptedImporter:
     spriteBone:
     - name: ArmR
       guid: 165c531599e5d4098a77f64cc38ef0ae
-      position: {x: 203.67126, y: 0.00005340576, z: 0}
-      rotation: {x: 0, y: 0, z: 0.004505485, w: 0.99998987}
+      position: {x: 203.67126, y: 0.00011444092, z: 0}
+      rotation: {x: 0, y: 0, z: 0.004505396, w: 0.99998987}
       length: 255.03711
       parentId: 1
       color:
@@ -1536,7 +1536,7 @@ ScriptedImporter:
     - name: BicepR
       guid: 6980c5eb370a84e0aa33433361b5ffcb
       position: {x: 44.24353, y: 24.786621, z: 0}
-      rotation: {x: 0, y: 0, z: -0.004505187, w: 0.99998987}
+      rotation: {x: 0, y: 0, z: -0.0045050383, w: 0.99998987}
       length: 203.67126
       parentId: -1
       color:
@@ -1963,8 +1963,8 @@ ScriptedImporter:
     spriteBone:
     - name: ThighR
       guid: 5c755508f4dba47a492f71412d87404a
-      position: {x: 1.6904926, y: -65.22535, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99359894, w: 0.11296545}
+      position: {x: 1.6904716, y: -65.22536, z: 0}
+      rotation: {x: 0, y: 0, z: -0.99359894, w: 0.11296524}
       length: 287.93228
       parentId: 1
       color:
@@ -1973,16 +1973,16 @@ ScriptedImporter:
     - name: Pelvis
       guid: 0836957e1a2bd4e8780f6428ebef409d
       position: {x: 103.16431, y: 24.348389, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7107052, w: 0.70349}
-      length: 179.8198
+      rotation: {x: 0, y: 0, z: 0.71070534, w: 0.7034898}
+      length: 179.81992
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: Spine
       guid: 08095ee3927a04017bf923ce5fba3b50
-      position: {x: 179.8199, y: 0.00005340576, z: 0}
-      rotation: {x: 0, y: 0, z: -0.005097954, w: 0.999987}
+      position: {x: 179.81992, y: -0.000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: -0.005098194, w: 0.999987}
       length: 159.6277
       parentId: 1
       color:
@@ -1990,18 +1990,18 @@ ScriptedImporter:
         rgba: 4278255615
     - name: BicepL
       guid: 2507278c81f564fde802bd97a6c58126
-      position: {x: 154.12407, y: 97.24306, z: 0}
-      rotation: {x: 0, y: 0, z: 0.70410156, w: 0.7100992}
-      length: 216.51428
+      position: {x: 154.12407, y: 97.2431, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7041017, w: 0.71009916}
+      length: 216.51431
       parentId: 2
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: ThighL
       guid: 3e0793c0df7a5403d8241b88a71e1a60
-      position: {x: -0.9022007, y: 69.79988, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99273103, w: 0.1203547}
-      length: 277.35638
+      position: {x: -0.90223503, y: 69.79983, z: 0}
+      rotation: {x: 0, y: 0, z: 0.992731, w: 0.12035468}
+      length: 277.35645
       parentId: 1
       color:
         serializedVersion: 2
@@ -2461,9 +2461,9 @@ ScriptedImporter:
     spriteBone:
     - name: CalfR
       guid: 2de89cb161414439894d9fc2cb7b3768
-      position: {x: -0.1348877, y: 270.79492, z: 0}
-      rotation: {x: 0, y: 0, z: -0.64424145, w: 0.7648222}
-      length: 233.67783
+      position: {x: -0.1348877, y: 270.79486, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6442413, w: 0.76482236}
+      length: 233.67776
       parentId: -1
       color:
         serializedVersion: 2
@@ -2777,8 +2777,8 @@ ScriptedImporter:
     spriteBone:
     - name: CalfR
       guid: 2de89cb161414439894d9fc2cb7b3768
-      position: {x: 287.9322, y: 0.00012207031, z: 0}
-      rotation: {x: 0, y: 0, z: -0.032935973, w: 0.9994575}
+      position: {x: 287.93237, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.03293577, w: 0.9994575}
       length: 233.6778
       parentId: 1
       color:
@@ -2787,8 +2787,8 @@ ScriptedImporter:
     - name: ThighR
       guid: 5c755508f4dba47a492f71412d87404a
       position: {x: -33.63098, y: 512.70435, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6187018, w: 0.785626}
-      length: 287.9323
+      rotation: {x: 0, y: 0, z: -0.6187017, w: 0.785626}
+      length: 287.93228
       parentId: -1
       color:
         serializedVersion: 2
@@ -3426,8 +3426,8 @@ ScriptedImporter:
     - name: ThighR
       guid: 5c755508f4dba47a492f71412d87404a
       position: {x: 33.36902, y: 272.70435, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6187018, w: 0.785626}
-      length: 287.9323
+      rotation: {x: 0, y: 0, z: -0.6187017, w: 0.785626}
+      length: 287.93228
       parentId: -1
       color:
         serializedVersion: 2
@@ -4096,9 +4096,9 @@ ScriptedImporter:
     spriteBone:
     - name: CalfL
       guid: 3e6460d881aa347099522b3911be6f0f
-      position: {x: 87.85181, y: 276.75043, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7792324, w: -0.62673503}
-      length: 249.99005
+      position: {x: 87.85193, y: 276.75024, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7792323, w: -0.6267352}
+      length: 249.98996
       parentId: -1
       color:
         serializedVersion: 2
@@ -4423,18 +4423,18 @@ ScriptedImporter:
     spriteBone:
     - name: CalfL
       guid: 3e6460d881aa347099522b3911be6f0f
-      position: {x: 277.35657, y: 0.000061035156, z: 0}
-      rotation: {x: 0, y: 0, z: 0.007503122, w: 0.9999719}
-      length: 249.99005
+      position: {x: 277.35654, y: 0.00012207031, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0075030625, w: 0.99997187}
+      length: 249.98997
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: ThighL
       guid: 3e0793c0df7a5403d8241b88a71e1a60
-      position: {x: 129.37726, y: 508.734, z: 0}
-      rotation: {x: 0, y: 0, z: 0.78391296, w: -0.6208707}
-      length: 277.3565
+      position: {x: 129.37732, y: 508.73395, z: 0}
+      rotation: {x: 0, y: 0, z: 0.78391284, w: -0.62087095}
+      length: 277.3564
       parentId: -1
       color:
         serializedVersion: 2
@@ -5026,9 +5026,9 @@ ScriptedImporter:
     spriteBone:
     - name: ThighL
       guid: 3e0793c0df7a5403d8241b88a71e1a60
-      position: {x: 85.37726, y: 268.734, z: 0}
-      rotation: {x: 0, y: 0, z: 0.78391296, w: -0.6208707}
-      length: 277.3565
+      position: {x: 85.37732, y: 268.73395, z: 0}
+      rotation: {x: 0, y: 0, z: 0.78391284, w: -0.62087095}
+      length: 277.3564
       parentId: -1
       color:
         serializedVersion: 2
@@ -5654,9 +5654,9 @@ ScriptedImporter:
     spriteBone:
     - name: ArmL
       guid: b4457a447e2e04062bf7746d98ceffcf
-      position: {x: 276.5786, y: 36.116943, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9999334, w: 0.011538803}
-      length: 238.58751
+      position: {x: 276.5786, y: 36.117065, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9999335, w: 0.011538774}
+      length: 238.58743
       parentId: -1
       color:
         serializedVersion: 2
@@ -5982,7 +5982,7 @@ ScriptedImporter:
     - name: BicepL
       guid: 2507278c81f564fde802bd97a6c58126
       position: {x: 467.08508, y: 20.282227, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99999106, w: 0.0042370255}
+      rotation: {x: 0, y: 0, z: 0.99999106, w: 0.0042369068}
       length: 216.51425
       parentId: -1
       color:
@@ -5990,9 +5990,9 @@ ScriptedImporter:
         rgba: 4278255360
     - name: ArmL
       guid: b4457a447e2e04062bf7746d98ceffcf
-      position: {x: 216.5141, y: 0.000015258789, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0073019555, w: 0.99997336}
-      length: 238.58745
+      position: {x: 216.51422, y: -0.00015258789, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0073020454, w: 0.9999734}
+      length: 238.58742
       parentId: 0
       color:
         serializedVersion: 2
@@ -6419,7 +6419,7 @@ ScriptedImporter:
     - name: BicepL
       guid: 2507278c81f564fde802bd97a6c58126
       position: {x: 235.08508, y: 20.282227, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99999106, w: 0.0042370255}
+      rotation: {x: 0, y: 0, z: 0.99999106, w: 0.0042369068}
       length: 216.51425
       parentId: -1
       color:
@@ -6427,9 +6427,9 @@ ScriptedImporter:
         rgba: 4278255360
     - name: ArmL
       guid: b4457a447e2e04062bf7746d98ceffcf
-      position: {x: 216.51416, y: 0.000030517578, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0073019555, w: 0.99997336}
-      length: 238.58745
+      position: {x: 216.51416, y: -0.00015258789, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0073020454, w: 0.9999734}
+      length: 238.58742
       parentId: 0
       color:
         serializedVersion: 2
@@ -6458,7 +6458,7 @@ ScriptedImporter:
         boneIndex3: 0
     - position: {x: 273.505, y: 36.484}
       boneWeight:
-        weight0: 0
+        weight0: 1
         weight1: 0
         weight2: 0
         weight3: 0
@@ -6807,7 +6807,7 @@ ScriptedImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
-    indices: 000000001a000000010000000e000000220000000f0000000f0000002200000010000000100000002200000023000000110000002100000012000000110000002400000021000000110000002300000024000000120000002000000013000000120000002100000020000000130000001f0000001400000013000000200000001f000000140000001e00000015000000140000001f0000001e000000150000001d00000016000000150000001e0000001d000000160000001c00000017000000160000001d0000001c000000170000001b00000018000000170000001c0000001b000000180000001a000000190000000d000000220000000e000000180000001b0000001a0000000c00000024000000220000000b000000210000002400000000000000190000001a000000010000001a00000002000000020000001a00000003000000030000001a00000004000000040000001b00000005000000040000001a0000001b000000050000001c00000006000000050000001b0000001c000000060000001d00000007000000060000001c0000001d000000070000001e00000008000000070000001d0000001e000000080000001f00000009000000080000001e0000001f00000009000000200000000a000000090000001f000000200000000a000000210000000b0000000a00000020000000210000000b000000240000000c0000000c000000220000000d000000220000002400000023000000
+    indices: 000000001a0000000100000000000000190000001a000000010000001a00000002000000020000001a00000003000000030000001a00000004000000040000001b00000005000000040000001a0000001b000000050000001c00000006000000050000001b0000001c000000060000001d00000007000000060000001c0000001d000000070000001e00000008000000070000001d0000001e000000080000001f00000009000000080000001e0000001f00000009000000200000000a000000090000001f000000200000000a000000210000000b0000000a00000020000000210000000b000000240000000c0000000b00000021000000240000000c000000220000000d0000000c00000024000000220000000d000000220000000e0000000e000000220000000f0000000f0000002200000010000000100000002200000023000000110000002100000012000000110000002400000021000000110000002300000024000000120000002000000013000000120000002100000020000000130000001f0000001400000013000000200000001f000000140000001e00000015000000140000001f0000001e000000150000001d00000016000000150000001e0000001d000000160000001c00000017000000160000001d0000001c000000170000001b00000018000000170000001c0000001b000000180000001a00000019000000180000001b0000001a000000220000002400000023000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 25}
@@ -6856,26 +6856,26 @@ ScriptedImporter:
     - name: Head
       guid: 5429487ae9cb946a1bfb314e7c844cfe
       position: {x: 95.26807, y: 6.7492676, z: 0}
-      rotation: {x: 0, y: 0, z: 0.70573807, w: 0.70847297}
-      length: 183.02382
+      rotation: {x: 0, y: 0, z: 0.705738, w: 0.7084729}
+      length: 183.02385
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: EyeL
       guid: f42fa8792c5e1474ebb56560e87d2e31
-      position: {x: 72.48919, y: 76.59917, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7157835, w: 0.6983223}
-      length: 49.48569
+      position: {x: 72.48919, y: 76.5992, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7157834, w: 0.69832236}
+      length: 49.4857
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4286578943
     - name: EyeR
       guid: 70d7a07fa19c74564a4deb6aad85d940
-      position: {x: 70.798294, y: -34.352264, z: 0}
-      rotation: {x: 0, y: 0, z: -0.70573723, w: 0.7084737}
-      length: 50.878777
+      position: {x: 70.79831, y: -34.352295, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7057372, w: 0.70847374}
+      length: 50.878784
       parentId: 0
       color:
         serializedVersion: 2
@@ -6883,7 +6883,7 @@ ScriptedImporter:
     - name: BicepL
       guid: 2507278c81f564fde802bd97a6c58126
       position: {x: -0.914917, y: -52.717773, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99999106, w: 0.0042370255}
+      rotation: {x: 0, y: 0, z: 0.99999106, w: 0.0042369068}
       length: 216.51425
       parentId: -1
       color:
@@ -7210,16 +7210,16 @@ ScriptedImporter:
     - name: Pelvis
       guid: 0836957e1a2bd4e8780f6428ebef409d
       position: {x: 961.1643, y: 916.3484, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7107052, w: 0.70349}
-      length: 179.81978
+      rotation: {x: 0, y: 0, z: 0.71070534, w: 0.7034898}
+      length: 179.81992
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: Spine
       guid: 08095ee3927a04017bf923ce5fba3b50
-      position: {x: 179.81982, y: 0.000061035156, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0050979853, w: 0.99998707}
+      position: {x: 179.81995, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.005098223, w: 0.999987}
       length: 159.6277
       parentId: 0
       color:
@@ -7228,16 +7228,16 @@ ScriptedImporter:
     - name: BicepL
       guid: 2507278c81f564fde802bd97a6c58126
       position: {x: 154.12402, y: 97.2431, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7041016, w: 0.7100992}
-      length: 216.51427
+      rotation: {x: 0, y: 0, z: 0.7041017, w: 0.71009916}
+      length: 216.51428
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: ArmL
       guid: b4457a447e2e04062bf7746d98ceffcf
-      position: {x: 216.51422, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: -0.007301895, w: 0.99997336}
+      position: {x: 216.51428, y: -0.00012207031, z: 0}
+      rotation: {x: 0, y: 0, z: -0.007302016, w: 0.99997336}
       length: 238.58745
       parentId: 2
       color:
@@ -7246,16 +7246,16 @@ ScriptedImporter:
     - name: BicepR
       guid: 6980c5eb370a84e0aa33433361b5ffcb
       position: {x: 159.62683, y: -100.915344, z: 0}
-      rotation: {x: 0, y: -0, z: -0.710288, w: 0.7039112}
-      length: 203.67123
+      rotation: {x: 0, y: -0, z: -0.710288, w: 0.7039113}
+      length: 203.67122
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: ArmR
       guid: 165c531599e5d4098a77f64cc38ef0ae
-      position: {x: 203.67126, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.004505484, w: 0.99998987}
+      position: {x: 203.67126, y: 0.00012207031, z: 0}
+      rotation: {x: 0, y: 0, z: 0.004505366, w: 0.99998987}
       length: 255.03708
       parentId: 4
       color:
@@ -7272,8 +7272,8 @@ ScriptedImporter:
         rgba: 4278223103
     - name: CalfL
       guid: 3e6460d881aa347099522b3911be6f0f
-      position: {x: 277.35645, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.007503084, w: 0.9999719}
+      position: {x: 277.35657, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.007503063, w: 0.99997187}
       length: 249.98997
       parentId: 6
       color:
@@ -7282,16 +7282,16 @@ ScriptedImporter:
     - name: ThighR
       guid: 5c755508f4dba47a492f71412d87404a
       position: {x: 1.6904907, y: -65.2254, z: 0}
-      rotation: {x: 0, y: -0, z: -0.99359894, w: 0.112965405}
-      length: 287.93228
+      rotation: {x: 0, y: -0, z: -0.99359894, w: 0.112965286}
+      length: 287.9323
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4286643968
     - name: CalfR
       guid: 2de89cb161414439894d9fc2cb7b3768
-      position: {x: 287.93228, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: -0.03293595, w: 0.99945754}
+      position: {x: 287.93237, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.03293579, w: 0.99945754}
       length: 233.67778
       parentId: 8
       color:

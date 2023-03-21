@@ -19,6 +19,7 @@ public class NewPlayer : PhysicsObject
   private int maxHealth = 100;
 
   [Header("References")]
+  [SerializeField] private Animator animator; 
   [SerializeField] private GameObject attackBox;
   public Dictionary<string, Sprite> inventory = new Dictionary<string, Sprite>();
   public Sprite inventoryItemBlank;
@@ -83,6 +84,9 @@ public class NewPlayer : PhysicsObject
     {
       Die();
     }
+
+    animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+    animator.SetFloat("velocityY", velocity.y);
   }
 
   public void UpdateUI()
