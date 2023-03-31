@@ -77,6 +77,7 @@ public class NewPlayer : PhysicsObject
 
     if(Input.GetButtonDown("Fire1"))
     {
+      animator.SetTrigger("attack");
       StartCoroutine("ActivateAttack");
     }
 
@@ -87,8 +88,8 @@ public class NewPlayer : PhysicsObject
 
     animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
     animator.SetFloat("velocityY", velocity.y);
-
     animator.SetBool("grounded", grounded);
+    animator.SetFloat("attackDirectionY", Input.GetAxis("Vertical"));
   }
 
   public void UpdateUI()
